@@ -6,6 +6,10 @@ angular.module('OAuth', [])
       var username = 'andyliu';
       var password = 'test@test';
       var authdata = 'sdfsf23432#$%%dsfasfsd^^^'; // Base64.encode(username + ':' + password);
+      //$http.post('/api/authenticate', { username: username, password: password })
+      //    .success(function (response) {
+      //        callback(response);
+      //    });
       $rootScope.globals = {
          currentUser: { username: username, authdata: authdata }
       };
